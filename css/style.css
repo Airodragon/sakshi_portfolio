@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -55,4 +56,54 @@ body{
 .hero-cont-3{
     background-image: url("../assets/img/pexels-mads-thomsen-2739013.jpg");
     filter: grayscale(80%);
+}
+.progress-title {
+    font-size: 1em;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 10px
+}
+
+.progress {
+    height: 20px;
+    border: 0.1em solid black;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible
+}
+
+.progress .progress-bar {
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s
+}
+
+.progress .progress-value {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: black;
+    /* border: 0.2em solid black; */
+    position: absolute;
+    left: 10px; 
+}
+
+/* .progress .progress-bar:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(35deg)
+} */
+#skills{
+    font-family: 'Indie Flower', cursive;
+}
+.progress-value{
+    font-family: 'Fira Sans', sans-serif;
 }
