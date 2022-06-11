@@ -34,13 +34,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
               <li class="nav-item mx-lg-2">
-                <a class="nav-link" aria-current="page" href="#">.about-me</a>
+                <a class="nav-link" aria-current="page" href="#about">.about-me</a>
               </li>
               <li class="nav-item mx-lg-2">
-                <a class="nav-link" href="#">.projects</a>
+                <a class="nav-link" href="#skills">.skills</a>
               </li>
                 <li class="nav-item mx-lg-2">
-                    <a class="nav-link" href="#">.contact</a>
+                    <a class="nav-link" href="#contact">.contact</a>
                 </li>
                 
             </ul>
@@ -69,9 +69,11 @@
                     skills and gain experience. Where
                     I can sharpen my skills and work
                     on new technology and
-                    understand industrial work
+                    understand industrial work.
                   </p>
+                <button class="btn btn-secondary mt-3" style="font-family: 'Fira Sans', sans-serif;" onclick="download()">Resume</button>
                 </div>
+
               </div>
             </div>
             <div class="col-sm-6">
@@ -265,7 +267,7 @@
     <div class="hero-cont-3"></div>
 
     <!-- SKILLS -->
-    <section id="skills" class="mt-3 container">
+    <section id="skills" class="mt-3 container pt-5">
         <div class="row">
             <div class="col-md-11 mx-auto">
                 <h3 class="progress-title">Web Development</h3>
@@ -360,7 +362,7 @@
     document.querySelector(".navbar").style.backgroundColor = "#fff";
     document.querySelector(".btn-nav-btn").style.backgroundColor = "#fff";
   } else {
-    document.querySelector(".navbar").style.backgroundColor = "#F0F0F0";
+    document.querySelector(".navbar").style.backgroundColor = "transparent";
     document.querySelector(".btn-nav-btn").style.backgroundColor = "#F0F0F0";
   }
 }
