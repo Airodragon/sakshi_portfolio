@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/svg.png" type="image/x-icon">
     <title>.sakshi jaiswal</title>
 
     <!-- BOOTSTRAP -->
@@ -259,6 +260,8 @@
             </div>
         </div>
     </section>
+    <!-- ***** About Area End ***** -->
+    
     <div class="hero-cont-3"></div>
 
     <!-- SKILLS -->
@@ -351,7 +354,16 @@
                 i = 0
             }
         }, 800);
-
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    document.querySelector(".navbar").style.backgroundColor = "#fff";
+    document.querySelector(".btn-nav-btn").style.backgroundColor = "#fff";
+  } else {
+    document.querySelector(".navbar").style.backgroundColor = "#F0F0F0";
+    document.querySelector(".btn-nav-btn").style.backgroundColor = "#F0F0F0";
+  }
+}
     </script>
 </body>
 </html>
