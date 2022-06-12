@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/timeline.css">
 
 
+
     <!-- FONT AWESOME -->
     <script src="https://use.fontawesome.com/46bf41fdfd.js"></script>
     
@@ -279,7 +280,7 @@
                 <h3 class="progress-title">Java</h3>
                 <div class="progress">
                     <div class="progress-bar" style="width:70%; background:#f2545b;">
-                        <div class="progress-value">80%</div>
+                        <div class="progress-value">70%</div>
                     </div>
                 </div>
                 <h3 class="progress-title">Python</h3>
@@ -341,31 +342,6 @@
     <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
-    <script>
-        function download() {
-            window.open("./assets/doc/sakshi_jaiswal_resume.pdf");
-        }
-        let changing_text = document.querySelector(".changing-text")
-        let arr = ["I am a web developer", "I am a web designer", "I am a tester"]
-        let i = 0
-        setInterval(() => {
-            changing_text.innerHTML = arr[i]
-            changing_text.classList.add("changing-text-animation")
-            i++
-            if (i == arr.length) {
-                i = 0
-            }
-        }, 800);
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-    document.querySelector(".navbar").style.backgroundColor = "#fff";
-    document.querySelector(".btn-nav-btn").style.backgroundColor = "#fff";
-  } else {
-    document.querySelector(".navbar").style.backgroundColor = "transparent";
-    document.querySelector(".btn-nav-btn").style.backgroundColor = "#F0F0F0";
-  }
-}
-    </script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
